@@ -1,0 +1,32 @@
+.icon-button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  border-radius: 3em;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: transparent;
+}
+
+.icon-button--small {
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+.icon-button--medium {
+  padding: 11px 20px;
+  font-size: 20px;
+}
+
+.icon-button--large {
+  padding: 12px 24px;
+  font-size: 30px;
+}
+
+.icon-button:hover {
+  color: white;
+  background-color: black;
+}
+
+.icon-button:focus {
+  outline: none;
+}

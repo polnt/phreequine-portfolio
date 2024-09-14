@@ -1,0 +1,13 @@
+.home {
+  padding: 100px;
+}
+
+.storybook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 80px 80px 20px 80px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* width: 100%; */
+}
