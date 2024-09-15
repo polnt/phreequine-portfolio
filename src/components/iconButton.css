@@ -5,6 +5,7 @@
   border-radius: 3em;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: transparent;
+  color: var(--primaryColor);
 }
 
 .icon-button--small {

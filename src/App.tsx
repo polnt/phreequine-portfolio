@@ -3,13 +3,13 @@
 import './App.css'
 
 import { Header } from './components/Header/Header'
-import { Home } from './views/Home'
+import { Welcome } from './components/Welcome/Welcome'
 
 function App() {
   return (
     <>
       <Header />
-      <Home />
+      <Welcome />
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

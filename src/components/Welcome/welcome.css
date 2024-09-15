@@ -1,11 +1,11 @@
-.home-intro {
+.welcome-intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.home-cta {
+.welcome-cta {
   display: flex;
   justify-content: center;
   align-items: center;

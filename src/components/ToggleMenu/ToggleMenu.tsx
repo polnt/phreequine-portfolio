@@ -4,7 +4,7 @@ import { MdClose } from "react-icons/md";
 import '../iconButton.css';
 
 export interface MenuProps {
-  /** Is this the principal call to action on the page? */
+  /** Is menu showed ? */
   isOpen?: boolean;
   /** What background color to use */
   backgroundColor?: string;

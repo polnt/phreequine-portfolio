@@ -27,7 +27,7 @@ export const Header = () => (
         <h1>Acme</h1> */}
       </div>
       <div style={{ display: "flex", justifyContent: 'space-between', alignItems: 'center' }}>
-        <ToggleLanguage label="fr" />
+        <ToggleLanguage />
         <ToggleDarkMode />
         <ToggleMenu />
         {/* <span className="language">FR</span>

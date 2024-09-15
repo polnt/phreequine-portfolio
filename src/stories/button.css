@@ -12,9 +12,9 @@
   color: white;
 }
 .storybook-button--secondary {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  box-shadow: var(--primaryColor) 0px 0px 0px 1px inset;
   background-color: transparent;
-  color: #333;
+  color: var(--primaryColor);
 }
 .storybook-button--small {
   padding: 10px 16px;

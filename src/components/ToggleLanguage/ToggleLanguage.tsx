@@ -1,9 +1,7 @@
-import { useState } from "react";
+import { useLanguage } from '../../hooks';
 import '../iconButton.css';
 
 export interface LanguageProps {
-  /** Is this the principal call to action on the page? */
-  label: string;
   /** What background color to use */
   backgroundColor?: string;
   /** How large should the button be? */
@@ -14,21 +12,21 @@ export interface LanguageProps {
 
 /** Primary UI component for user interaction */
 export const ToggleLanguage = ({
-  label = 'fr',
   size = 'medium',
   backgroundColor,
   ...props
 }: LanguageProps) => {
-  const [language, setLanguage] = useState(label);
+  const { language, changeLanguage } = useLanguage();
+
   return (
     <button
       type="button"
       className={`icon-button icon-button--${size}`}
       style={{ backgroundColor }}
-      onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
+      onClick={() => { changeLanguage(language === 'fr' ? 'en' : 'fr'); }}
       {...props}
     >
-      {language.toUpperCase()}
+      {language?.toUpperCase()}
     </button>
   );
 };
