@@ -9,7 +9,9 @@
       "home": "Home",
       "work": "Work",
       "about": "About",
-      "contact": "Contact"
+      "contact": "Contact",
+      "email": "Email",
+      "socials": "Socials"
     }
   },
   "fr": {
@@ -22,7 +24,9 @@
       "home": "Accueil",
       "work": "Projets",
       "about": "A propos",
-      "contact": "Contact"
+      "contact": "Contact",
+      "email": "Email",
+      "socials": "Réseaux"
     }
   }
 }

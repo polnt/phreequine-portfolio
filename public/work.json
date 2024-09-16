@@ -1,0 +1,30 @@
+[
+  {
+    "projectName" : "4A Paie & RH Conseils",
+    "url": "https://4apaie-rhconseils.fr/",
+    "mainTec": "React",
+    "mainTask": "Web development"
+  },
+  {
+    "projectName": "Basile",
+    "mainTec": "React/Express",
+    "mainTask": "Web development"
+  },
+  {
+    "projectName": "API Rest Template",
+    "mainTec": "Express/Typescript",
+    "mainTask": "Web development / devOps"
+  },
+  {
+    "projectName" : "Thérapies et sons",
+    "url": "https://www.therapiesetsons.com/",
+    "mainTec": "Wordpress",
+    "mainTask": "Web development"
+  },
+  {
+    "projectName" : "Juggling Calling",
+    "url": "https://www.jugglingcalling.com/",
+    "mainTec": "Wordpress",
+    "mainTask": "Web development"
+  }
+]
