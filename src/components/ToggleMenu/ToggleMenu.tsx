@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { CgMenuGridO } from "react-icons/cg";
 import { MdClose } from "react-icons/md";
 import '../iconButton.css';
@@ -21,17 +20,16 @@ export const ToggleMenu = ({
   backgroundColor,
   ...props
 }: MenuProps) => {
-  const [isMenuOpen, setMenuOpen] = useState(isOpen);
+  // const { isMenuOpen, setMenuOpen } = useModalMenu(isOpen);
   return (
     <button
       type="button"
       className={`icon-button icon-button--${size}`}
       style={{ backgroundColor, display: "flex", justifyContent: 'space-between', alignItems: 'center' }}
-      onClick={() => setMenuOpen(!isMenuOpen)}
       {...props}
     >
-      {isMenuOpen ? <MdClose /> : <CgMenuGridO />}
-      
+      {isOpen ? <MdClose /> : <CgMenuGridO />}
+
     </button>
   );
 };

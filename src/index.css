@@ -11,7 +11,7 @@
 
 body {
   --backgroundColor: #242424;
-  --primaryColor: rgba(255, 255, 255, 0.87);
+  --primaryColor: rgba(255, 255, 255);
 
   color-scheme: light dark;
   color: var(--primaryColor);
@@ -20,26 +20,28 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  padding: 0 10px 0 10px;
 }
 
 body.light {
-  --backgroundColor: rgba(255, 255, 255, 0.87);
+  --backgroundColor: rgba(255, 255, 255);
   --primaryColor: #242424;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--primaryColor);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  color: var(--primaryColor);
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2em;
   line-height: 1.1;
+  text-align: center;
 }
 
 button {
@@ -62,18 +64,27 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-/* 
-@media (prefers-color-scheme: light) {
+
+@media screen and (min-width: 425px) {
   body {
-    color: #213547;
-    background-color: #ffffff;
+    padding: 0 20px 0 20px;
   }
+  h1 {
+    font-size: 2.5em;
+  }
+}
 
-  a:hover {
-    color: #747bff;
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 50px 0 50px;
   }
+  h1 {
+    font-size: 3.2em;
+  }
+}
 
-  button {
-    background-color: #f9f9f9;
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 0 100px 0 100px;
   }
-} */
+}

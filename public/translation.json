@@ -5,7 +5,11 @@
       "iAm2": "Fullstack web developer / devOps",
       "iDo": "I build web and mobile apps, from A to Z !",
       "myProjects": "My projects",
-      "learnMore": "Learn more"
+      "learnMore": "Learn more",
+      "home": "Home",
+      "work": "Work",
+      "about": "About",
+      "contact": "Contact"
     }
   },
   "fr": {
@@ -14,7 +18,11 @@
       "iAm2": "Développeur web fullstack / devOps",
       "iDo": "Je développe des applications web et mobile, de A à Z !",
       "myProjects": "Mes projets",
-      "learnMore": "En savoir plus"
+      "learnMore": "En savoir plus",
+      "home": "Accueil",
+      "work": "Projets",
+      "about": "A propos",
+      "contact": "Contact"
     }
   }
 }
