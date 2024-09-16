@@ -1,11 +1,15 @@
-.header {
+.header-container {
   position: relative;
+}
+
+.header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   /* border-bottom: 1px solid var(--primaryColor); */
   padding: 30px 0px;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  z-index: 10;
   /* width: 100%; */
 }
 

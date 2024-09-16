@@ -8,14 +8,16 @@ import './header.css';
 export const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
-    <header className="header">
-      <div></div>
-      <div style={{ display: "flex", justifyContent: 'space-between', alignItems: 'center' }}>
-        <ToggleLanguage />
-        <ToggleDarkMode />
-        <ToggleMenu isOpen={isMenuOpen} onClick={() => setMenuOpen(!isMenuOpen)} />
-      </div>
-      {isMenuOpen && <Menu />}
-    </header>
+    <div className="header-container">
+      <header className="header">
+        <div></div>
+        <div style={{ display: "flex", justifyContent: 'space-between', alignItems: 'center' }}>
+          <ToggleLanguage />
+          <ToggleDarkMode />
+          <ToggleMenu isOpen={isMenuOpen} onClick={() => setMenuOpen(!isMenuOpen)} />
+        </div>
+      </header>
+      {isMenuOpen && <Menu close={() => setMenuOpen(false)} />}
+    </div>
   );
 };

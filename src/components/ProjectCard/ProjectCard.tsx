@@ -1,5 +1,5 @@
-import { FaExternalLinkAlt } from "react-icons/fa";
-import "./projectCard.css"
+import { TbWorldShare } from "react-icons/tb";
+import "./projectCard.css";
 
 interface iProject {
   key: string;
@@ -10,12 +10,12 @@ interface iProject {
 }
 
 const ProjectCard =
-  ({ projectName, mainTec }: iProject) => {
+  ({ projectName, mainTec, url }: iProject) => {
     return (
       <div className="project-card">
         <div>{projectName}</div>
         <div>{mainTec}</div>
-        <FaExternalLinkAlt />
+        {url && <a href={url} target="_blank" style={{ fontSize: "1.3em" }}><TbWorldShare /></a>}
       </div>
     );
   };

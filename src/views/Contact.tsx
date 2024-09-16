@@ -6,7 +6,7 @@ const Contact = () => {
 
   return (
     <div>
-      <h1>{t("contact")}</h1>
+      <h1 className="outlined">{t("contact")}</h1>
       <div className="sub-contact">
         <div>
           <h2>{t("email")}</h2>

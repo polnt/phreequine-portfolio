@@ -5,7 +5,7 @@ const About = () => {
 
   return (
     <div>
-      <h1>{t("about")}</h1>
+      <h1 className="outlined">{t("about")}</h1>
       <p>Passionné par la programmation, amoureux de l'internet, j'aime apprendre, partager et construire. . . (essentiellement autour des ces sujets, mais pas seulement !)</p>
     </div>
   );

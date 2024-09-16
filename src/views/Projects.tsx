@@ -21,8 +21,11 @@ const Projects = () => {
         <h1>Preview WIP</h1>
       </div>
       <div className="projects">
-        <h1>{t("work")}</h1>
-        {projects.map(project => <ProjectCard key={project.projectName} projectName={project.projectName} mainTec={project.mainTec} />)}
+        <div className="projects-main-title outlined" style={{ padding: 0 }}>
+          <h1>{t("work")}</h1>
+          <span style={{ fontSize: "2em" }}>{projects.length}</span>
+        </div>
+        {projects.map(project => <ProjectCard key={project.projectName} url={project.url} projectName={project.projectName} mainTec={project.mainTec} />)}
       </div>
     </div>
   );

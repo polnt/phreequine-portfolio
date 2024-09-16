@@ -2,7 +2,7 @@ import { CgMenuGridO } from "react-icons/cg";
 import { MdClose } from "react-icons/md";
 import '../iconButton.css';
 
-export interface MenuProps {
+export interface ToggleMenuProps {
   /** Is menu showed ? */
   isOpen?: boolean;
   /** What background color to use */
@@ -16,11 +16,11 @@ export interface MenuProps {
 /** Primary UI component for user interaction */
 export const ToggleMenu = ({
   isOpen = false,
-  size = 'medium',
+  size = 'large',
   backgroundColor,
   ...props
-}: MenuProps) => {
-  // const { isMenuOpen, setMenuOpen } = useModalMenu(isOpen);
+}: ToggleMenuProps) => {
+
   return (
     <button
       type="button"
