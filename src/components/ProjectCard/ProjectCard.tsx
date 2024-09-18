@@ -2,7 +2,7 @@ import { TbWorldShare } from "react-icons/tb";
 import "./projectCard.css";
 
 interface iProject {
-  key: string;
+  key?: string;
   projectName: string;
   url?: string;
   mainTec?: string;

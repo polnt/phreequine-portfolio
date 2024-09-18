@@ -1,6 +1,11 @@
 import { useTranslation } from 'react-i18next';
+
+import IconNavLink from '../IconNavLink/IconNavLink';
+
+import { FaCode } from "react-icons/fa6";
+import { GrContact } from "react-icons/gr";
+
 import './welcome.css';
-import { NavLink } from 'react-router-dom';
 
 export const Welcome = () => {
   const { t } = useTranslation();
@@ -15,8 +20,8 @@ export const Welcome = () => {
         <p>{t("iDo")}</p>
       </div>
       <div className="welcome-cta">
-        <NavLink to="/work">{t("work")}</NavLink>
-        <NavLink to="/about">{t("about")}</NavLink>
+        <IconNavLink to="/work" label={t("work")} icon={<FaCode />} />
+        <IconNavLink to="/about" label={t("about")} icon={<GrContact />} />
       </div>
     </article>
   );

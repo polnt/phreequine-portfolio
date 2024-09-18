@@ -2,3 +2,9 @@
   border-bottom: 1px solid var(--primaryColor);
   padding-bottom: 20px;
 }
+
+.hidden {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+}

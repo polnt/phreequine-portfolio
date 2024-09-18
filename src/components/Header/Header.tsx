@@ -1,23 +1,28 @@
-import { useState } from 'react';
-import Menu from "../Menu/Menu";
+import { NavLink } from 'react-router-dom';
 import { ToggleDarkMode } from '../ToggleDarkMode/ToggleDarkMode';
 import { ToggleLanguage } from '../ToggleLanguage/ToggleLanguage';
 import { ToggleMenu } from '../ToggleMenu/ToggleMenu';
 import './header.css';
 
-export const Header = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
+export interface HeaderProps {
+  isOpen?: boolean;
+  closeMenu?: () => void;
+  toggleMenu?: () => void;
+}
+
+const Header = ({ isOpen, closeMenu, toggleMenu }: HeaderProps) => {
   return (
-    <div className="header-container">
-      <header className="header">
-        <div></div>
-        <div style={{ display: "flex", justifyContent: 'space-between', alignItems: 'center' }}>
-          <ToggleLanguage />
-          <ToggleDarkMode />
-          <ToggleMenu isOpen={isMenuOpen} onClick={() => setMenuOpen(!isMenuOpen)} />
-        </div>
-      </header>
-      {isMenuOpen && <Menu close={() => setMenuOpen(false)} />}
-    </div>
+    <header className="header">
+      <div>
+        <NavLink to="/" onClick={closeMenu}>PC</NavLink>
+      </div>
+      <div style={{ display: "flex", justifyContent: 'space-between', alignItems: 'center' }}>
+        <ToggleLanguage />
+        <ToggleDarkMode />
+        <ToggleMenu isOpen={isOpen} onClick={toggleMenu} />
+      </div>
+    </header>
   );
 };
+
+export default Header;

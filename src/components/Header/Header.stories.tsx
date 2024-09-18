@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { MemoryRouter } from 'react-router-dom';
 
-import { Header } from './Header';
+import Header from './Header';
 
 const meta = {
   title: 'Header/Header',
@@ -16,4 +17,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    isOpen: false
+  },
+  decorators: [
+    (Story) => (
+      <MemoryRouter initialEntries={["/"]}>
+        <Story />
+      </MemoryRouter>
+    ),
+  ]
+};
+
