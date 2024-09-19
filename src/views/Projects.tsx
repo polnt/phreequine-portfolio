@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import ProjectCard from '../components/ProjectCard/ProjectCard';
-import work from '../../public/work.json';
+import work from '../work.json';
 
 import './projects.css';
 

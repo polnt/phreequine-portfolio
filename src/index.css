@@ -1,5 +1,24 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --callToActionColor: rgb(255, 165, 0);
+  --contrastTextColor: #242424;
+  --backgroundColor: #242424;
+  --primaryColor: rgba(255, 255, 255);
+  --secondaryColor: #242424;
+
+  .light {
+    --backgroundColor: rgba(255, 255, 255);
+    --primaryColor: #242424;
+    --secondaryColor: rgba(255, 255, 255);
+  }
+
+  ;
+
+  font-family: Inter,
+  system-ui,
+  Avenir,
+  Helvetica,
+  Arial,
+  sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -10,9 +29,6 @@
 }
 
 body {
-  --backgroundColor: #242424;
-  --primaryColor: rgba(255, 255, 255);
-
   color-scheme: light dark;
   color: var(--primaryColor);
   background-color: var(--backgroundColor);
@@ -21,11 +37,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   padding: 0 10px 0 10px;
-}
-
-body.light {
-  --backgroundColor: rgba(255, 255, 255);
-  --primaryColor: #242424;
 }
 
 a {
@@ -68,6 +79,7 @@ button:focus-visible {
   body {
     padding: 0 20px 0 20px;
   }
+
   h1 {
     font-size: 2.5em;
   }
@@ -77,6 +89,7 @@ button:focus-visible {
   body {
     padding: 0 50px 0 50px;
   }
+
   h1 {
     font-size: 3.2em;
   }

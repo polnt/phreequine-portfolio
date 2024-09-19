@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import MenuContext from './reusable/context/MenuContext';
 
 import Header from './components/Header/Header';
 import Router from './Router';
@@ -11,11 +12,13 @@ function App() {
 
   return (
     <>
-      <Header isOpen={isMenuOpen} closeMenu={() => setMenuOpen(false)} toggleMenu={() => setMenuOpen(!isMenuOpen)} />
-      <Menu isOpen={isMenuOpen} closeMenu={() => setMenuOpen(false)} />
-      <main className={isMenuOpen ? "hidden" : ""}>
-        <Router />
-      </main>
+      <MenuContext.Provider value={{ isOpen: isMenuOpen, setMenuOpen: setMenuOpen }}>
+        <Header />
+        <Menu />
+        <main className={isMenuOpen ? "hidden" : ""}>
+          <Router />
+        </main>
+      </MenuContext.Provider>
     </>
   );
 }

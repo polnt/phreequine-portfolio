@@ -2,7 +2,7 @@
   "en": {
     "translation": {
       "iAm1": "Hello, I am ",
-      "iAm2": "Fullstack web developer / devOps",
+      "iAm2": "web developer",
       "iDo": "I build web and mobile apps, from A to Z !",
       "myProjects": "My projects",
       "learnMore": "Learn more",
@@ -17,7 +17,7 @@
   "fr": {
     "translation": {
       "iAm1": "Salut, je suis ",
-      "iAm2": "Développeur web fullstack / devOps",
+      "iAm2": "développeur web",
       "iDo": "Je développe des applications web et mobile, de A à Z !",
       "myProjects": "Mes projets",
       "learnMore": "En savoir plus",

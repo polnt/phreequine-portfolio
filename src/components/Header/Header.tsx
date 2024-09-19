@@ -1,16 +1,22 @@
+import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import MenuContext from '../../reusable/context/MenuContext';
 import { ToggleDarkMode } from '../ToggleDarkMode/ToggleDarkMode';
 import { ToggleLanguage } from '../ToggleLanguage/ToggleLanguage';
 import { ToggleMenu } from '../ToggleMenu/ToggleMenu';
 import './header.css';
 
-export interface HeaderProps {
-  isOpen?: boolean;
-  closeMenu?: () => void;
-  toggleMenu?: () => void;
-}
+const Header = () => {
+  const { isOpen, setMenuOpen } = useContext(MenuContext);
 
-const Header = ({ isOpen, closeMenu, toggleMenu }: HeaderProps) => {
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!isOpen);
+  };
+
   return (
     <header className="header">
       <div>

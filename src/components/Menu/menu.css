@@ -21,6 +21,11 @@
   transition: font-size 0.5s ease-in;
 }
 
+.menu-trail-container {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .menu {
     font-size: 3em;
@@ -35,7 +40,7 @@
   .menu-item:hover {
     font-size: 1.5em;
   }
-  
+
 }
 
 @media screen and (min-width: 1024px) {
