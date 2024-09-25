@@ -25,18 +25,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const LightMode: Story = {
+export const Default: Story = {
   args: {
-    darkMode: false,
     size: 'large',
   },
 };
 
-export const DarkMode: Story = {
-  args: {
-    darkMode: true,
-    size: 'large',
-  },
-};
 
 
