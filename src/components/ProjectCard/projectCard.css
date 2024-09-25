@@ -8,3 +8,26 @@
   padding-top: 20px;
   padding-bottom: 10px;
 }
+
+.project-card-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-card-tecs {
+  display: flex;
+  gap: 10px;
+}
+
+.project-card-tag {
+  border-radius: 9999px;
+  background-color: var(--callToActionColor);
+  padding: 10px;
+  font-size: 0.8em;
+  color: var(--contrastTextColor);
+}
+
+.project-card-gh-icon:hover {
+  color: var(--callToActionColor)
+}

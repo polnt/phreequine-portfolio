@@ -9,6 +9,12 @@
   align-items: flex-start;
 }
 
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .projects-main-title {
   display: flex;
   justify-content: space-between;

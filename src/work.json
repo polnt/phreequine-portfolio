@@ -1,30 +1,68 @@
 [
   {
-    "projectName" : "4A Paie & RH Conseils",
-    "url": "https://4apaie-rhconseils.fr/",
-    "mainTec": "React",
-    "mainTask": "Web development"
+    "projectName": "4A Paie & RH Conseils",
+    "liveUrl": "https://4apaie-rhconseils.fr/",
+    "ghUrl": "https://github.com/polnt/4a_v3",
+    "mainTec": [
+      "Typescript",
+      "React",
+      "Firebase"
+    ],
+    "mainTask": "Web development",
+    "description": "Site vitrine réalisé pour la société 4A Paie et RH Conseils"
   },
   {
     "projectName": "Serenity",
-    "mainTec": "React/Express",
-    "mainTask": "Web development"
+    "mainTec": [
+      "Typescript",
+      "React",
+      "Express",
+      "Dokku"
+    ],
+    "mainTask": "Web development",
+    "description": "Application permettant le suivi des patients en chirurgie, en pré et post-op."
   },
   {
     "projectName": "API Rest Template",
-    "mainTec": "Express/Typescript",
-    "mainTask": "Web development / devOps"
+    "mainTec": [
+      "Typescript",
+      "Express",
+      "Docker",
+      "Github Actions"
+    ],
+    "ghUrl": "https://github.com/polnt/td_api",
+    "mainTask": "Web development / devOps",
+    "description": "Template d'une API Rest, accompagné de son infrastructure CI/CD, permettant d'automatiser la création d'API Rest en proposant une base commune robuste."
   },
   {
-    "projectName" : "Thérapies et sons",
-    "url": "https://www.therapiesetsons.com/",
-    "mainTec": "Wordpress",
-    "mainTask": "Web development"
+    "projectName": "Thérapies et sons",
+    "liveUrl": "https://www.therapiesetsons.com/",
+    "mainTec": [
+      "Wordpress"
+    ],
+    "mainTask": "Web development",
+    "description": "Site vitrine d'un professionnel de thérapies alternatives"
   },
   {
-    "projectName" : "Juggling Calling",
-    "url": "https://www.jugglingcalling.com/",
-    "mainTec": "Wordpress",
-    "mainTask": "Web development"
+    "projectName": "Juggling Calling",
+    "liveUrl": "https://www.jugglingcalling.com/",
+    "mainTec": [
+      "Wordpress",
+      "WooCommerce"
+    ],
+    "mainTask": "Web development",
+    "description": "Site e-commerce d'artisans"
+  },
+  {
+    "projectName": "polca.me",
+    "liveUrl": "https://www.polca.pro/",
+    "ghUrl": "https://github.com/polnt/phreequine-portfolio",
+    "mainTec": [
+      "Typescript",
+      "React",
+      "Firebase"
+    ],
+    "mainTask": "Web development",
+    "description": "Portfolio"
   }
 ]

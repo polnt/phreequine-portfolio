@@ -9,9 +9,12 @@
       "home": "Home",
       "work": "Work",
       "about": "About",
+      "aboutMe": "Passionate about programming, internet lover, I enjoy solving problems and meeting technical challenges. And because together we go further, I want to join a team that shares my values!",
       "contact": "Contact",
       "email": "Email",
-      "socials": "Socials"
+      "socials": "Socials",
+      "resume": "resume",
+      "resumeLink": "/Resume-Pol-CASABAYO.pdf"
     }
   },
   "fr": {
@@ -24,9 +27,12 @@
       "home": "Accueil",
       "work": "Projets",
       "about": "A propos",
+      "aboutMe": "Passionné par la programmation, amoureux de l'internet, j'aime apprendre, partager et construire. . . (essentiellement autour des ces sujets, mais pas seulement !)",
       "contact": "Contact",
       "email": "Email",
-      "socials": "Réseaux"
+      "socials": "Réseaux",
+      "resume": "curriculum vitae",
+      "resumeLink": "/CV-Pol-CASABAYO.pdf"
     }
   }
 }

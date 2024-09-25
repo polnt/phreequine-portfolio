@@ -1,4 +1,5 @@
 import useLanguage from './useLanguage';
 import useDarkMode from './useDarkMode';
+import useMenuContext from './useMenuContext';
 
-export { useLanguage, useDarkMode };
+export { useLanguage, useDarkMode, useMenuContext };

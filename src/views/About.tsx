@@ -1,13 +1,18 @@
-import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { MdArrowOutward } from "react-icons/md";
 
 const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <article>
       <h1 className="outlined">{t("about")}</h1>
-      <p>Passionné par la programmation, amoureux de l'internet, j'aime apprendre, partager et construire. . . (essentiellement autour des ces sujets, mais pas seulement !)</p>
-    </div>
+      <p>{t("aboutMe")}</p>
+      <Link style={{ display: "flex", alignItems: "center", gap: "10px" }} to={t("resumeLink")} target="_blank">
+        {t("resume")}<MdArrowOutward />
+      </Link>
+    </article>
   );
 };
 

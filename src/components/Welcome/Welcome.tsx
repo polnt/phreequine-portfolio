@@ -1,8 +1,7 @@
-import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSprings } from '@react-spring/web';
+import { useMenuContext } from '../../hooks';
 
-import MenuContext from '../../reusable/context/MenuContext';
 import Trail from '../Trail/Trail';
 
 import IconNavLink from '../IconNavLink/IconNavLink';
@@ -23,7 +22,7 @@ const onHover = (bool: boolean) => ({
 });
 
 export const Welcome = () => {
-  const { isOpen } = useContext(MenuContext);
+  const { isOpen } = useMenuContext();
   const { t } = useTranslation();
   const [springs, api] = useSprings(2, () => ({
     delay: 1500,

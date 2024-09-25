@@ -3,7 +3,7 @@ import { useTrail, a } from '@react-spring/web';
 
 const Trail: React.FC<{
   open: boolean;
-  className: string;
+  className?: string;
   height: number | string;
   delay?: number;
   children: ReactNode;

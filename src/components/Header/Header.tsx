@@ -1,13 +1,12 @@
-import { useContext } from 'react';
+import { useMenuContext } from '../../hooks';
 import { NavLink } from 'react-router-dom';
-import MenuContext from '../../reusable/context/MenuContext';
 import { ToggleDarkMode } from '../ToggleDarkMode/ToggleDarkMode';
 import { ToggleLanguage } from '../ToggleLanguage/ToggleLanguage';
 import { ToggleMenu } from '../ToggleMenu/ToggleMenu';
 import './header.css';
 
 const Header = () => {
-  const { isOpen, setMenuOpen } = useContext(MenuContext);
+  const { isOpen, setMenuOpen } = useMenuContext();
 
   const closeMenu = () => {
     setMenuOpen(false);

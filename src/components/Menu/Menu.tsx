@@ -1,9 +1,8 @@
-import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useMenuContext } from '../../hooks';
 
 import IconNavLink from '../IconNavLink/IconNavLink';
 import Trail from "../Trail/Trail";
-import MenuContext from '../../reusable/context/MenuContext';
 
 // ICONS
 import { GrHomeRounded } from "react-icons/gr";
@@ -15,7 +14,7 @@ import './menu.css';
 
 const Menu = () => {
   const { t } = useTranslation();
-  const { isOpen, setMenuOpen } = useContext(MenuContext);
+  const { isOpen, setMenuOpen } = useMenuContext();
 
   const closeMenu = () => {
     setMenuOpen(false);

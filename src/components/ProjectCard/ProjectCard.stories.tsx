@@ -27,8 +27,9 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     projectName: "projectName",
-    mainTec: 'mainTec',
-    url: ""
+    mainTec: ['mainTec'],
+    liveUrl: "",
+    ghUrl: ""
   },
 };
 
