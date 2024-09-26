@@ -1,8 +1,9 @@
 .project-card {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 20px; */
   width: 100%;
   border-bottom: 1px solid var(--primaryColor);
   padding-top: 20px;
@@ -26,8 +27,26 @@
   padding: 10px;
   font-size: 0.8em;
   color: var(--contrastTextColor);
+  white-space: nowrap;
+}
+
+.project-card-gh-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .project-card-gh-icon:hover {
   color: var(--callToActionColor)
+}
+
+@media screen and (min-width: 768px) {
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 20px;
+    width: 100%;
+    border-bottom: 1px solid var(--primaryColor);
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }

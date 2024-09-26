@@ -29,7 +29,7 @@ const ProjectCard =
         <div className="project-card-tecs">
           {mainTec.map(tec => <span className="project-card-tag">{tec}</span>)}
         </div>
-        {ghUrl && <a className="project-card-gh-icon" href={ghUrl} target="_blank" style={{ fontSize: "1.3em" }}><FaGithub /></a>}
+        {ghUrl && <a className="project-card-gh-icon" href={ghUrl} target="_blank" style={{ fontSize: "1.5em" }}><FaGithub /></a>}
       </a>
     );
   };

@@ -27,7 +27,7 @@ const Projects = () => {
           <h1>{t("work")}</h1>
           <span style={{ fontSize: "2em" }}>{projects.length}</span>
         </div>
-        <Trail className='projects-list' open={!isOpen} height={75}>
+        <Trail className='projects-list' open={!isOpen} height={"auto"}>
           {projects.map(project =>
             <ProjectCard
               key={project.projectName}
