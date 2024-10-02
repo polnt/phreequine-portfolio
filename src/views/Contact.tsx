@@ -14,7 +14,7 @@ const Contact = () => {
         </div>
         <div className="socials">
           <h2>{t("socials")}</h2>
-          <a href="https://www.linkedin.com/in/pol-casabayo-bb10201b7/" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/pol-casabayo/" target="_blank">LinkedIn</a>
           <a href="https://www.github.com/polnt" target="_blank">Github</a>
         </div>
       </div>
